@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>xyz.article</groupId>
+    <artifactId>LitewarsMinestom</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <log4j2.version>2.24.3</log4j2.version>
+    </properties>
+
+    <repositories>
+        <!-- 优先使用Maven Central获取Minestom依赖 -->
+        <repository>
+            <id>minestom-central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <!-- 其他仓库 -->
+        <repository>
+            <id>aliyunmaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>altasengine</id>
+            <url>https://reposilite.atlasengine.ca/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/net.minestom/minestom-snapshots -->
+        <dependency>
+            <groupId>net.minestom</groupId>
+            <artifactId>minestom-snapshots</artifactId>
+            <version>4fe2993057</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.minestom/data -->
+        <dependency>
+            <groupId>net.minestom</groupId>
+            <artifactId>data</artifactId>
+            <version>1.21.5-rv2</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/net.minestom/data -->
+        <dependency>
+            <groupId>com.github.TogAr2</groupId>
+            <artifactId>MinestomPvP</artifactId>
+            <version>09b97d4923</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.TogAr2</groupId>
+            <artifactId>MinestomFluids</artifactId>
+            <version>48ccf450d8</version>
+        </dependency>
+        <dependency>
+            <groupId>ca.atlasengine</groupId>
+            <artifactId>atlas-projectiles</artifactId>
+            <version>2.1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>${log4j2.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>net.kyori</groupId>
+            <artifactId>adventure-text-minimessage</artifactId>
+            <version>4.22.0</version>
+        </dependency>
+    </dependencies>
+</project>
