@@ -4,5 +4,5 @@
 ## A Minecraft Minigame server core  
 You need to gather resources to fight against your opponent while protecting your own bed from being destroyed. Once your bed is destroyed, you won't be able to respawn
 ## How to use it?
-WARNING: THIS IS A WIP PROJECT! IT CAN'T TO BE PLAYED!  
+WARNING: THIS IS A WIP PROJECT! IT CAN'T TO BE PLAYED NOW!  
 Like paper or other server cores, type "java -jar <coreName>.jar" and return. Got it.  
